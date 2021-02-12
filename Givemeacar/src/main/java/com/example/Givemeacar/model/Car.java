@@ -32,11 +32,14 @@ public class Car {
     @Column(name = "etat")
     private String etat;
 
+
     //Default constructor
     public Car() {
 
     }
     //Parameters constructor
+
+
     public Car(String agency, String marque, String model, Integer kilometrage, Boolean isAvailable, String etat) {
         this.agency = agency;
         this.marque = marque;
@@ -45,8 +48,6 @@ public class Car {
         this.isAvailable = isAvailable;
         this.etat = etat;
     }
-
-    // Getter and Setter
 
     public long getId() {
         return id;
@@ -103,4 +104,5 @@ public class Car {
     public void setEtat(String etat) {
         this.etat = etat;
     }
+
 }
